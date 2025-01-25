@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content="#000000">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" href="/logos/favicon.ico">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+   <title>Vaibhav Agarwal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <script src="script.js"></script>
+  
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Portfolio</div>
+<div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+
+   <nav id="hamburger-nav">
+    <div class="logo">Portfolio</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+           </div>
+           
+           <div class="menu-links">
+             <li><a href="#" onclick="toggleMenu()">Home</a></li>
+             <li><a href="#about" onclick="toggleMenu()">About</a></li>
+             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+           </div>
+    </div>
+   </nav>
+
+   <section id="home">
+       <div class="section_pic-container">
+        <img src="MyPortfolioProfileImage.jpg" alt="Vaibhav Agarwal Profile picture">
+       </div>
+       <div class="section_text">
+           <p class="section_text_p1">Hello, I'm</p>
+           <h1 class="title">Vaibhav Agarwal</h1>
+           <span class="section_text_p2"></span>
+           <p class="section_text_p3"> Aspiring to become a <span> Full Stack Developer </span> </p>
+           <div class="btn-container">
+               <button class="btn btn-color-2" onclick="window.open('VaibhavAgarwal_Resume-2024.pdf')">
+                   Download CV
+               </button>
+      <a href="#contact">  <button class="btn btn-color-2"> 
+                Contact Info
+            </button> </a>
+           </div>
+
+           <div id="socials-container">
+            <a href="https://www.linkedin.com/in/vaibhavagarwal2307/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a> 
+        <a href="https://github.com/" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+        <a href="https://www.youtube.com/@vaibhavagarwal2307" target="_blank"><i class="fa-brands fa-youtube"></i> </a>
+        
+          </div>
+
+       </div>
+   </section>
+    
+
+   <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section_pic-container"><img src="MyLeetGithub.jpg" alt="About picture" class="about-pic">
+      </div>
+  
+      <div class="about-details-container">
+        <div class="about-containers">
+  
+          <div class="details-container">
+            <img src="experience_icon.png" alt="Experience icon">
+          <h3>Experience</h3>
+          <p>2+ years</p>
+        </div>
+  
+        <div class="details-container"><svg width="40" height="55" viewBox="0 0 95 111" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-full w-auto max-w-none"><path d="M68.0063 83.0664C70.5 80.5764 74.5366 80.5829 77.0223 83.0809C79.508 85.579 79.5015 89.6226 77.0078 92.1127L65.9346 103.17C55.7187 113.371 39.06 113.519 28.6718 103.513C28.6117 103.456 23.9861 98.9201 8.72653 83.957C-1.42528 74.0029 -2.43665 58.0749 7.11648 47.8464L24.9282 28.7745C34.4095 18.6219 51.887 17.5122 62.7275 26.2789L78.9048 39.362C81.6444 41.5776 82.0723 45.5985 79.8606 48.3429C77.6488 51.0873 73.635 51.5159 70.8954 49.3003L54.7182 36.2173C49.0488 31.6325 39.1314 32.2622 34.2394 37.5006L16.4274 56.5727C11.7767 61.5522 12.2861 69.574 17.6456 74.8292C28.851 85.8169 37.4869 94.2846 37.4969 94.2942C42.8977 99.496 51.6304 99.4184 56.9331 94.1234L68.0063 83.0664Z" fill="#FFA116"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M41.1067 72.0014C37.5858 72.0014 34.7314 69.1421 34.7314 65.615C34.7314 62.0879 37.5858 59.2286 41.1067 59.2286H88.1245C91.6454 59.2286 94.4997 62.0879 94.4997 65.615C94.4997 69.1421 91.6454 72.0014 88.1245 72.0014H41.1067Z" fill="#B3B3B3"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M49.9118 2.02335C52.3173 -0.55232 56.3517 -0.686894 58.9228 1.72277C61.494 4.13244 61.6284 8.17385 59.2229 10.7495L16.4276 56.5729C11.7768 61.552 12.2861 69.5738 17.6453 74.8292L37.4088 94.2091C39.9249 96.6764 39.968 100.72 37.505 103.24C35.042 105.761 31.0056 105.804 28.4895 103.337L8.72593 83.9567C-1.42529 74.0021 -2.43665 58.0741 7.1169 47.8463L49.9118 2.02335Z" fill="black"></path>
+        </svg>
+        <h3>LeetCode</h3>
+        <p>50+ solved</p>
+      </div>
+  
+        </div>
+       
+        <div class="text-container">
+          <p>
+            I'm a skilled Software coder with 2+ years of relevant experience in IT industry and have utilized my skills in successful development and timely deployment of various applications for globally distributed 
+            clients. My passion lies in backend development working behind the scenes to create the logic, APIs and 
+            database interactions and thus building and ensuring the core functionality of applications. My skills in
+            web-designing and my understanding of UX/UI principles drives me to produce visually appealing and
+            user-friendly websites. By putting myself in the end users' shoes, I strive to have users a seamless browsing experience.
+            Thus, I'm a wholesome full-stack developer <br> package. 
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="#experience"><i class="fa-regular fa-chevrons-down"></i> </a>
+  </section>
+
+
+  <section id="experience">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+    
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>HTML</h4>
+              <p>Experienced</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>CSS</h4>
+              <p>Experienced</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>Javascript</h4>
+              <p>Intermediate</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>ReactJs</h4>
+              <p>Intermediate</p>
+            </div>
+            </article>
+    
+            
+    
+          </div>
+        </div>
+    
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>Java</h4>
+              <p>Experienced</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>Springboot</h4>
+              <p>Basic</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>Python</h4>
+              <p>Intermediate</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>SQL</h4>
+              <p>Intermediate</p>
+            </div>
+            </article>
+    
+          
+          </div>
+        </div>
+    
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools</h2>
+          <div class="article-container">
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>VS Code</h4>
+              <p>Intermediate</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>JIRA</h4>
+              <p>Experienced</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>DAP</h4>
+              <p>Experienced</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>Github</h4>
+              <p>Intermediate</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>Splunk</h4>
+              <p>Basic</p>
+            </div>
+            </article>
+    
+            <article> <svg stroke="currentColor" fill="#4682B4" stroke-width="0" viewBox="0 0 16 16" class="experience-details-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
+            </svg>  
+            <div>
+              <h4>CyberArk</h4>
+              <p>Intermediate</p>
+            </div>
+            </article>
+    
+        </div>
+        </div>
+    
+      </div>
+    </div>
+    </section>
+    
+  
+    <section id="projects">
+        <p class="section_text_p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+        <img src="Project1.jpg" alt="Project 1" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <a href="https://github.com/VaibhavAgarwal2307/Project1" target="_blank">   <button class="btn btn-color-2 project-btn"> Github </button> </a> 
+              <a href="https://github.com/VaibhavAgarwal2307/Project1" target="_blank">  <button class="btn btn-color-2 project-btn"> Live Demo </button> </a> 
+            </div>
+        
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+        <img src="Project2.jpg" alt="Project 2" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+                <a href="https://github.com/VaibhavAgarwal2307/Project2" target="_blank">  <button class="btn btn-color-2 project-btn"> Github  </button>  </a> 
+          <a href="https://github.com/VaibhavAgarwal2307/Project2" target="_blank">   <button class="btn btn-color-2 project-btn"> Live Demo </button> </a>
+            </div>
+        
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+        <img src="Project3.jpg" alt="Project 3" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+          <a href="https://github.com/VaibhavAgarwal2307/Project3" target="_blank">   <button class="btn btn-color-2 project-btn"> Github </button> </a> 
+          <a href="https://github.com/VaibhavAgarwal2307/Project3" target="_blank">  <button class="btn btn-color-2 project-btn"> Live Demo </button> </a> 
+            </div>
+        
+          </div>
+        </div>
+        </div>
+        </section>
+       
+        <section id="contact">
+          <p class="section_text_p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+
+            <div class="contact-info-container">
+              <p> <a href="mailto:gammarays2307@gmail.com" target="_blank"> <img src="Gmail icon.jpg" alt="Email icon" class="icon contact-icon">
+              </a> gammarays2307@gmail.com </p>
+              </div>
+            
+              <div class="contact-info-container">
+                <p> <a href="https://api.whatsapp.com/?phone=+919068356764/" target="_blank"> <img src="WhatsApp icon.jpg" alt="WhatsApp icon" class="icon contact-icon">
+                </a> +91-9068356764 </p>
+                </div>
+
+
+          </div>
+
+        </section>
+
+
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+          </nav>
+
+          <p> Designed By Vaibhav Agarwal </p>
+
+        </footer>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
