@@ -11,6 +11,7 @@ body
 {
 font-family: "Poppins", sans-serif;
 padding-bottom: 90px;
+    overflow-x: hidden;
 }
 
 html
@@ -176,12 +177,14 @@ section {
     gap: 5rem;
     flex-wrap: wrap;
     text-align: center;
+    min-height: 100vh;
+    align-items: center;
 }
 
 .section_pic-container {
     display: flex;
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     height: auto;
     margin: auto;
 }
