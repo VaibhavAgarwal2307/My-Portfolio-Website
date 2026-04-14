@@ -153,11 +153,10 @@ a:hover {
 /* Sections */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
+    padding: 2rem 5%;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: auto;
 }
 
 .section-container {
@@ -172,13 +171,20 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .section_pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.section_pic-container img {
+    width: 100%;
+    height: auto;
 }
 
 .section_text {
@@ -304,26 +310,28 @@ section {
 
 /* Nav bar */
 
-.navbar
-{
+.navbar {
   position: fixed;
-  bottom: 0.75%;
+  bottom: 10px;
   width: 100%;
-  z-index: 1;
-  right: 35%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
 }
  
  .navigation
  {
-   width: 400px;
+   width: 90%;
+   max-width: 400px;
    height: 70px;
+   left: 0;
+   margin: auto;
    background: #0000004D;
    position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
    border-radius: 40px;
-   left: 35%;
    backdrop-filter: blur(30px);
    -webkit-backdrop-filter: blur(50px);
    border: 2px solid rgba(255, 255, 255, .2);
@@ -509,7 +517,9 @@ section {
 .about-containers,
 .about-details-container 
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .about-pic {
@@ -608,8 +618,8 @@ article
 .project-img 
 {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: auto;
 }
 
 .project-title 
