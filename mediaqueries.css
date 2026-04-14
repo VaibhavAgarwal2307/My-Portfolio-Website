@@ -115,3 +115,28 @@ text-align: center;
 
 }
 
+@media screen and (max-width: 768px) {
+
+  #home {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  .about-containers {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+}
+
